@@ -21,6 +21,7 @@ header {
   position: relative;
   width: 100%;
   height: 152px;
+  margin-bottom: 5px;
   border: 1px solid black;
   }
 
@@ -36,8 +37,13 @@ header > p {
   margin-top: 16px;
 }
 header > p > a{
+  margin-left: 5px;
+  line-height: 2;
   color: white;
 }
+header > p > a:nth-child(1):hover { font-weight: bold;}
+header > p > a:nth-child(2):hover { font-weight: bold;}
+header > p > a:nth-child(3):hover { font-weight: bold;}
 
 header > .menu{
   left: 0;
@@ -74,21 +80,24 @@ header > .menu > li:nth-child(2) > a:hover {background-image: url("../img/header
 header > .menu > li:nth-child(3) > a {background-image: url("../img/header_products.jpg");}
 header > .menu > li:nth-child(3) > a:hover {background-image: url("../img/header_products_choice.jpg");}
 
+
 /*메인*/
 #main {
   width: 100%;
+  height: auto;
   min-height: 600px;
   margin: 0 auto;
-  overflow: hidden;
+
 }
 
+/*메인 - index */
 #main > .slider {
   position: relative;
   width: 1050px;
   height: 450px;
   margin-left: 15px;
   box-sizing: border-box;
-
+  overflow: hidden;
 }
 
 #main > .slider > ul {
@@ -133,8 +142,13 @@ header > .menu > li:nth-child(3) > a:hover {background-image: url("../img/header
   color: white;
   background-color: black;
 }
-
-#main > section {
+#main > .items {
+  position: relative;
+  width: 100%;
+  height: 1200px;
+}
+#main > .items >section {
+  position: relative;
   float: right;
   width: 100%;
   height: 400px;
@@ -144,7 +158,7 @@ header > .menu > li:nth-child(3) > a:hover {background-image: url("../img/header
 #main .B_title > img{
   width: 100%;
 }
-#main section > article {
+#main .items >section > article {
   float: left;
   width: 25%;
   height: 85%;
@@ -152,18 +166,18 @@ header > .menu > li:nth-child(3) > a:hover {background-image: url("../img/header
   border: 1px solid gray;
 }
 
-#main section > article > a {
+#main .items >section > article > a {
   display: block;
   width: 100%;
   height: 100%;
   padding: 10px;
   box-sizing: border-box;
 }
-#main section > article > a:hover > p {
+#main .items >section > article > a:hover > p {
   text-decoration: underline;
 }
 
-#main section > article .thumb {
+#main .items >section > article .thumb {
   width: 100%;
   height: 200px;
   margin: 0px auto;
@@ -171,7 +185,7 @@ header > .menu > li:nth-child(3) > a:hover {background-image: url("../img/header
   text-align: center;
 }
 
-#main section > article h2 {
+#main .items >section > article h2 {
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 15px;
   margin-top: 4px;
@@ -181,7 +195,7 @@ header > .menu > li:nth-child(3) > a:hover {background-image: url("../img/header
   overflow: hidden;
 }
 
-#main section > article p {
+#main .items > section > article p {
   color: #DDD;
   font-size: 12px;
   line-height: 16px;
@@ -191,29 +205,73 @@ header > .menu > li:nth-child(3) > a:hover {background-image: url("../img/header
   overflow: hidden;
 }
 
-#main section > article .price{
+#main .items > section > article .price{
   position: relative;
   width: 100%;
   height: auto;
   text-align: center;
 }
 
-#main section > article ins::after {content: "원";}
+#main .items > section > article ins::after {content: "원";}
 
-#main section > article ins {
+#main .items > section > article ins {
   font-family: 'Noto Sans KR', sans-serif;
   font-size: 20px;
   text-decoration: none;
   color: #aaf;
 }
 
+/*메인 - subpage */
+#main .view{
+  position: relative;
+  width: 100%;
+  min-height: 600px;
+  border: 1px solid blue;
+  box-sizing: border-box;
+}
+
+#main .view > aside {
+  position: absolute;
+  left: 0;
+  width: 200px;
+  min-height: inherit;
+  border: 1px solid yellow;
+  box-sizing: border-box;
+}
+
+#main .sub_main {
+  position: absolute;
+  left: 200px;
+  width: 880px;
+  min-height: inherit;
+  border: 1px solid yellow;
+  box-sizing: border-box;
+}
+#main .sub_main > img{
+  display: block;
+  width: 100%;
+  height: 50px;
+  border: 1px solid yellow;
+  box-sizing: border-box;
+}
+#main .sub_main > section{
+  width: 100%;
+  height: auto;
+  border: 1px solid red;
+  box-sizing: border-box;
+}
+
 
 
 /*풋터*/
 footer {
-  position:  relative;
+  position: relative;
+  margin-top: 5px;
   width: 100%;
   height: 50px;
+}
+footer > .info {
+  position: absolute;
 }
 
 footer > .info > li{
@@ -221,9 +279,16 @@ footer > .info > li{
   top: 5px;
 }
 footer > .info a{
+  margin-left: 3px;
   color: white;
 }
+footer > .info a:nth-child(1):hover {font-weight: bold;}
+footer > .info a:nth-child(2):hover {font-weight: bold;}
+footer > .info a:nth-child(3):hover {font-weight: bold;}
+footer > .info a:nth-child(4):hover {font-weight: bold;}
+
 footer > p {
-  position: absolute;
+  position:  absolute;
+  text-align: left;
   top: 25px;
 }
