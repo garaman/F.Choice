@@ -72,13 +72,13 @@ header > .menu > li > a {
 }
 
 header > .menu > li:nth-child(1) > a {background-image: url("../img/header_home.jpg");}
-header > .menu > li:nth-child(1) > a:hover {background-image: url("../img/header_home_choice.jpg");}
+header > .menu > li:nth-child(1) > a:hover {background-image: url("../img/header_home_ho.jpg");}
 
 header > .menu > li:nth-child(2) > a {background-image: url("../img/header_about.jpg");}
-header > .menu > li:nth-child(2) > a:hover {background-image: url("../img/header_about_choice.jpg");}
+header > .menu > li:nth-child(2) > a:hover {background-image: url("../img/header_about_ho.jpg");}
 
 header > .menu > li:nth-child(3) > a {background-image: url("../img/header_products.jpg");}
-header > .menu > li:nth-child(3) > a:hover {background-image: url("../img/header_products_choice.jpg");}
+header > .menu > li:nth-child(3) > a:hover {background-image: url("../img/header_products_ho.jpg");}
 
 
 /*메인*/
