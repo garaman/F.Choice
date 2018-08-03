@@ -14,6 +14,7 @@ a {text-decoration: none; color: #111;}
   width: 1080px;
   height: auto;
   margin: 0 auto;
+
 }
 
 /*해더*/
@@ -87,7 +88,6 @@ header > .menu > li:nth-child(3) > a:hover {background-image: url("../img/header
   height: auto;
   min-height: 600px;
   margin: 0 auto;
-
 }
 
 /*메인 - index */
@@ -225,8 +225,7 @@ header > .menu > li:nth-child(3) > a:hover {background-image: url("../img/header
 #main .view{
   position: relative;
   width: 100%;
-  min-height: 600px;
-  border: 1px solid blue;
+  min-height: 800px;
   box-sizing: border-box;
 }
 
@@ -235,38 +234,59 @@ header > .menu > li:nth-child(3) > a:hover {background-image: url("../img/header
   left: 0;
   width: 200px;
   min-height: inherit;
-  border: 1px solid yellow;
+  padding: 10px;
   box-sizing: border-box;
 }
+#main .view > aside > ul > li{
+  border: 1px solid #d7d7d7;
+  background-color: #333;
+  padding: 5px;
+}
+
+#main .view > aside > ul > li > a{
+  background-color: #333;
+  color: #ddd;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 15px;
+}
+
+#main .view > aside  > ul > li:nth-child(1) > a{ font-size: 25px;}
+#main .view > aside  > ul > li:nth-child(1) > i{ font-size: 25px; background-color: #333;}
 
 #main .sub_main {
   position: absolute;
+  padding-top: 5px;
   left: 200px;
   width: 880px;
-  min-height: inherit;
-  border: 1px solid yellow;
+  border: 3px solid black;
   box-sizing: border-box;
 }
 #main .sub_main > img{
   display: block;
   width: 100%;
-  height: 50px;
-  border: 1px solid yellow;
+  height: auto;
   box-sizing: border-box;
 }
 #main .sub_main > section{
   width: 100%;
   height: auto;
-  border: 1px solid red;
+  border-top: 1px solid black;
+  background-color: white;
+  color: black;
   box-sizing: border-box;
 }
-
+#main .sub_main > section > p{
+  padding: 10px;
+  background-color: white;
+  color: black;
+}
 
 
 /*풋터*/
 footer {
   position: relative;
   margin-top: 5px;
+  padding: 5px;
   width: 100%;
   height: 50px;
 }
