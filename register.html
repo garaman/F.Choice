@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>F.Choice</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./js/slider.js"></script>
+    <link rel="stylesheet" href="./css/indexStyle.css"/>
+    <link rel="stylesheet" href="./css/sub.css"/>
+    <link rel="stylesheet" href="./css/memberStyle.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+  </head>
+  <body>
+    <div id="IndexView">
+      <header>
+        <a href="./index.html" class="logo"><img src="./img/logo2.jpg" alt="로고"></a>
+        <p>
+          <a href="#">로그인</a>
+          <a href="#">회원가입</a>
+          <a href="#">고객센터</a>
+        </p>
+        <ul class="menu">
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./aboutus.html">About Us</a></li>
+          <li><a href="./products.html">Products</a></li>
+        </ul>
+      </header>
+      <div id="member">
+        <section class="register">
+				<form action="#" method="POST">
+					<section>
+						<table>
+							<caption>사이트 이용정보 입력</caption>
+							<tr>
+								<td>아이디</td>
+								<td>
+									<input type="text" name="id" placeholder="아이디를 입력" required />
+									<span class="resultId"></span>
+								</td>
+							</tr>
+							<tr>
+								<td>비밀번호</td>
+								<td><input type="password" name="pw1" placeholder="비밀번호를 입력" required /></td>
+							</tr>
+							<tr>
+								<td>비밀번호확인</td>
+								<td><input type="password" name="pw2" placeholder="비밀번호를 확인" required /></td>
+							</tr>
+						</table>
+					</section>
+					<section>
+						<table>
+							<caption>개인정보 입력</caption>
+							<tr>
+								<td>이름</td>
+								<td><input type="text" name="name" placeholder="이름을 입력" required /></td>
+							</tr>
+							<tr>
+								<td>별명</td>
+								<td>
+									<span class="info">공백없이 한글, 영문, 숫자만 입력가능</span>
+									<div>
+										<input type="text" name="nick" placeholder="별명을 입력" required />
+									</div>
+									<span class="resultNick"></span>
+								</td>
+							</tr>
+							<tr>
+								<td>EMAIL</td>
+								<td><input type="email" name="email" placeholder="이메일을 입력" 	required /></td>
+							</tr>
+							<tr>
+								<td>휴대폰</td>
+								<td><input type="text" name="hp" placeholder="-포함 13자리를 입력" maxlength="13" required /></td>
+							</tr>
+							<tr>
+								<td>주소</td>
+								<td>
+									<div>
+										<input type="text" name="zip" id="zip" placeholder="우편번호" readonly />
+										<button type="button" class="btnFind">주소검색</button>
+									</div>
+									<div>
+										<input type="text" name="addr1" id="addr1" size="50" placeholder="주소를 검색하세요." readonly />
+									</div>
+									<div>
+										<input type="text" name="addr2" id="addr2" size="50" placeholder="상세주소를 입력하세요." />
+									</div>
+								</td>
+							</tr>
+						</table>
+
+					</section>
+					<div>
+						<a href="./index.html" class="cancel">취소</a>
+						<input type="submit" class="join" value="회원가입" />
+					</div>
+				</form>
+			</section>
+	  	</div>
+
+    </div>
+
+      <footer>
+        <ul class="info">
+          <li> <a href="#">회사소개</a> /</li>
+          <li> <a href="#">이용약관</a> /</li>
+          <li> <a href="#">개인정보취급정책</a> /</li>
+          <li> <a href="#">판매정책</a></li>
+        </ul>
+        <p>Copyright(C)F.Choice All rights reserved.</p>
+      </footer>
+
+  </div>
+  </body>
+</html>
